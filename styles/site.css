@@ -50,7 +50,9 @@ p {
 	background: #9fa8a3
 }
 
-
+.nav.center {
+	text-align: center;
+}
 
 .bar {
 }
