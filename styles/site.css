@@ -54,6 +54,19 @@ p {
 	text-align: center;
 }
 
+.nav.fit {
+	display: table;
+	width: 100%;
+}
+
+.nav.fit li {
+	display: table-cell;
+}
+
+.nav.fit a {
+	display: block;
+}
+
 .bar {
 }
 
