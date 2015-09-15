@@ -46,6 +46,7 @@ p {
 
 .nav a {
 	display: inline-block;
+	position: relative;
 	padding: 1em;
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: bold;
@@ -59,11 +60,23 @@ p {
 .nav a:hover {
 	color: white;
 	background: #f2cbbc;
-	transition-duration: 1s;
+	transition-duration: .3s;
 }
 
 .nav a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0%;
+	height: 5px;
+	background: #dbe9d8;
+	transition: all .3s ease-in;
+}
 
+.nav a:hover:after {
+	width: 100%;
 }
 
 .nav.center {
@@ -85,7 +98,6 @@ p {
 
 .bar {
 }
-
 
 #primary-nav {
 }
