@@ -9,7 +9,7 @@ h1 {
 	font-weight: 800;
 	font-size: 90px;
 	line-height: 1.5;
-	letter-spacing: .3em;
+	letter-spacing: .2em;
 	text-transform: uppercase;
 	color: white;
 }
@@ -20,7 +20,7 @@ h2 {
 	font-weight: 600;
 	font-size: 30px;
 	line-height: 1.0;
-	letter-spacing: .3em;
+	letter-spacing: .2em;
 	color: white;
 }
 
@@ -28,9 +28,9 @@ p {
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.0;
-	letter-spacing: .2em;
+	letter-spacing: .1em;
 	color: white;
 }
 
