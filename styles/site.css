@@ -1,7 +1,6 @@
 body {
-	background: #c0dfd9;
+	background: #c5d5cb;
 }
-
 
 h1 {
 	margin: 0;
@@ -10,7 +9,7 @@ h1 {
 	font-weight: 800;
 	font-size: 90px;
 	line-height: 1.5;
-	letter-spacing: .1em;
+	letter-spacing: .3em;
 	text-transform: uppercase;
 	color: white;
 }
@@ -18,19 +17,44 @@ h1 {
 h2 {
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: bold;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 50px;
 	line-height: 1.0;
-	letter-spacing: .1em;
+	letter-spacing: .3em;
 	color: white;
 }
 
 p {
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: normal;
-	font-weight: 200;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.0;
-	letter-spacing: .1em;
+	letter-spacing: .2em;
 	color: white;
+}
+
+.nav {
+	padding: 0; /*all sides 0*/
+	list-style: none;
+	 
+}
+	
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 1em; 
+	background: #9fa8a3
+}
+
+
+
+.bar {
+}
+
+
+#primary-nav {
 }
