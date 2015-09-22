@@ -1,4 +1,32 @@
 body {
+	background: grey;
+	margin: 0;	
+	text-align: center
+}
+
+img,
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 90%;
+	max-width: 760px;
+	margin: 0 auto; 
+}
+
+.clear {
+	overflow: hidden;
+}
+
+/*
+	Masthead Layout
+	This shows up at the top of the page and includes the navigation.
+*/
+
+.masthead {
 	background: #f2cbbc;
 }
 
@@ -7,28 +35,30 @@ h1 {
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: bold;
 	font-weight: 800;
-	font-size: 90px;
+	font-size: 50px;
 	line-height: 1.5;
 	letter-spacing: .05em;
 	text-transform: uppercase;
 	color: white;
+	text-align: center;
 }
 
 h2 {
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: bold;
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.0;
 	letter-spacing: .2em;
 	color: white;
+	text-align: center
 }
 
 p {
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.0;
 	letter-spacing: .1em;
 	color: white;
@@ -36,16 +66,15 @@ p {
 
 .nav {
 	padding: 0; /*all sides 0*/
-	list-style: none;
-	 
+	list-style: none;	 
 }
 	
 .nav li {
-	display: inline-block;
+	display: block;
 }
 
 .nav a {
-	display: inline-block;
+	display: block;
 	position: relative;
 	padding: 1em;
 	font-family: gill sans, proxima nova, helvetica, arial, sans-serif;
@@ -71,7 +100,7 @@ p {
 	left: 0;
 	width: 0%;
 	height: 5px;
-	background: #e3f09b;
+	background: #e1e3e4;
 	transition: all .3s ease-in;
 }
 
@@ -83,18 +112,52 @@ p {
 	text-align: center;
 }
 
-.nav.fit {
-	display: table;
-	width: 100%;
+@media (min-width: 500px) {
+	.nav.fit {
+		display: table;
+		width: 100%;
+	}
+
+	.nav.fit li {
+		display: table-cell;
+	}
+
+	.nav.fit a {
+		display: block;
+	}
 }
 
-.nav.fit li {
-	display: table-cell;
+.main-content {
+	background: #e1e3e4;
 }
 
-.nav.fit a {
-	display: block;
+
+.sub-content {
+	background: #f2cbbc;
 }
+
+
+@media (min-width: 500px) {
+	.main-content {
+		float: left;
+		width: 60%;
+		margin-left: 20%;
+		
+	}
+	
+	.sub-content {
+		float: left;
+		width: 20%;
+		margin-left: -80%;
+	}
+	
+	.third-content {
+		float: left;
+		width: 20%;
+	}
+}
+
+
 
 .bar {
 }
